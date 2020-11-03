@@ -5,8 +5,8 @@ article = ['Карманные Евгения', 'Карманные Полины
 
 assert len(procent) == len(article)
 
-admission  = int(sys.argv[1]) 
-
+# admission  = int(sys.argv[1]) 
+admission = int(input('Введите сумму поступления: '))
 
 for j,i in zip(article, procent):
-    print(j, '-', admission * i)
+    print(j + ':', admission * i)
